@@ -4,7 +4,7 @@
         String name;
         int marks;
     }
-public class arrayofobjects
+public class ArrayOfObjects
     {
         public static void main(String a[])
             {

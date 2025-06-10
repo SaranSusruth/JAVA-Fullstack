@@ -1,4 +1,4 @@
-public class diffsize2Darray
+public class DiffSize2DArray
 {
     public static void main(String[] args) {
         int nums[][] = new int[3][];

@@ -4,7 +4,7 @@
         String name;
         int marks;
     }
-public class enhancedfroloop
+public class EnhancedForLoop
     {
         public static void main(String a[])
             {

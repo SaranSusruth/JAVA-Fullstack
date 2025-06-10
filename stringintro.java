@@ -1,4 +1,4 @@
-public class stringintro 
+class StringIntro 
 {
   public static void main(String[] a)
   {
