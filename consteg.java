@@ -3,7 +3,7 @@ class vehicleII
         private String name;
         private int speed;
 
-        public vehicle()
+        public vehicleII()
         {
             name = "Nexon";
             speed = 170;
