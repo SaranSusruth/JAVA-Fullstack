@@ -32,7 +32,7 @@ class EncapII
         ManII obj = new ManII();
         obj.setName("susruth ");
         obj.setAge(21); 
-        System.out.println("name: "+ obj.getName()+ "\n" + "age: " + obj.getAge());
+        System.out.println("name: "+ obj.getName()+ "" + "age: " + obj.getAge());
 
     }
     
