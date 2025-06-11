@@ -1,4 +1,4 @@
-class Human
+class Man
 {
     private String name = "susruth";
     private int age = 21;
@@ -20,7 +20,7 @@ class Encap
 {
     public static void main(String[] args)
     {
-        Human obj = new Human();
+        Man obj = new Man();
         System.out.println("name: "+ obj.getName() + "age: " + obj.getAge());
 
     }
