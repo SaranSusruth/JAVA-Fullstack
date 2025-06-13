@@ -14,7 +14,7 @@ public class AdvExercise
             System.out.print("Enter first number: ");
             int a = input.nextInt();
             System.out.print("Enter second number: ");
-            int b = input.nextInt();
+            Double b = input.nextDouble();
 
             // Ask user for the operation (+, -, *, /)
             System.out.print("Choose operation (+, -, *, /): ");
@@ -54,6 +54,6 @@ public class AdvExercise
             System.out.print("Do you want to calculate again? (y/n): ");
             again = input.next();
         }
-        System.out.println("Thank you for using the calculator!");
+        System.out.println("Thank you for using the calculator.");
     }
 }
