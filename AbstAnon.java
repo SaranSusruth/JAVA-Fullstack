@@ -1,3 +1,5 @@
+import java.util.logging.Logger;
+
 abstract class A
 {
     public abstract void show();
@@ -13,6 +15,8 @@ abstract class A
 
 public class AbstAnon
 {
+    private static final Logger logger = Logger.getLogger(AbstAnon.class.getName());
+
     public static void main(String[] args)
     {
         // A obj = new B();
@@ -21,7 +25,7 @@ public class AbstAnon
         {
             public void show()
             {
-                System.out.println("this is show method of anonymous method class with reference to abstract class"); // this is an anonymous class with reference to abstract class A
+                logger.info("this is show method of anonymous method class with reference to abstract class"); // this is an anonymous class with reference to abstract class A
             }
         };
         obj.show();
