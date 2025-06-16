@@ -55,5 +55,6 @@ public class AdvExercise
             again = input.next();
         }
         System.out.println("Thank you for using the calculator.");
+        input.close();
     }
 }
