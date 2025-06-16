@@ -1,4 +1,10 @@
-class Pen
+interface Tool
+{
+    public void write();
+}
+
+
+class Pen implements Tool
 {
     public void write()
     {
@@ -6,20 +12,20 @@ class Pen
     }
 }
 
-class Pencil
+class Pencil implements Tool 
 {
     public void write()
     {
-        System.out.println("Writing with pencil")
+        System.out.println("Writing with pencil");
     }
 }
 
 
 class Writer
 {
-    public void write(Pencil pencil)
+    public void write(Tool pen)
     {
-        pencil.write();
+        pen.write();
     }
 }
 
@@ -28,10 +34,12 @@ public class InterfaceEgII
 {
     public static void main(String[] a)
     {
-        Pen pen = new Pen();
-        Pencil pencil = new Pencil();
+        Tool pen = new Pen();
+
+        Tool pencil = new Pencil();
+
         Writer susruth = new Writer();
 
-        susruth.write(pencil);
+        susruth.write(pen);
     }
 }
