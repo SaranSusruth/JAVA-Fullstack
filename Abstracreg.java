@@ -1,12 +1,16 @@
 // Abstract class with abstract method and concrete method
+import java.util.logging.Logger;
+
 abstract class Car
 {
+    private static final Logger logger = Logger.getLogger(Car.class.getName());
+
     public abstract void drive();
     public abstract void fly();
 
     public void playMusic()
     {
-        System.out.println("Playing music in the car");
+        logger.info("Playing music in the car");
     }
 
 }
@@ -15,21 +19,25 @@ abstract class Car
 
 abstract class Nexon extends Car
 {
+    private static final Logger logger = Logger.getLogger(Nexon.class.getName());
+
     public void display()
     {
-        System.out.println("Nexon is a car");
+        logger.info("Nexon is a car");
     }
 }
 
 class UpdatedNexon extends Nexon
 {
+    private static final Logger logger = Logger.getLogger(UpdatedNexon.class.getName());
+
     public void fly()
     {
-        System.out.println("Updated Nexon is driving");
+        logger.info("Updated Nexon is driving");
     }
     public void drive()
     {
-        System.out.println("Nexon is driving");
+        logger.info("Nexon is driving");
     }
 }
 
