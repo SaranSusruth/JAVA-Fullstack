@@ -1,16 +1,15 @@
-public class ArrayEx
+ 
+ public class ArrayEx
 {
     public static void main(String[] args)
     {
-        // TODO: Declare and initialize an integer array with the values 45, 22, 89, 16, 90, and 33
-        int a[] = { 45, 22, 89, 16, 90, 33 };
+       int[] a = { 45, 22, 89, 16, 90, 33 }; //  Declare and initialize an integer array with the values 45, 22, 89, 16, 90, and 33
 
-        // TODO: Initialize min and max with the first element
-        int min = a[0];
-        int max = a[0];
+        int min = a[0]; //  Initialize min and max with the first element
+        int max = a[0]; //  Initialize min and max with the first element
 
-        // TODO: Use an enhanced for loop to find min and max
-        for (int num : a)
+
+        for (int num : a)          //an enhanced for loop to find min and max
         {
             if (num < min)
             {
@@ -22,7 +21,6 @@ public class ArrayEx
             }
         }
 
-        // TODO: Print the smallest and largest numbers
         System.out.println("Smallest number: " + min);
         System.out.println("Largest number: " + max);
     }
