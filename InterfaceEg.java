@@ -1,12 +1,9 @@
-class Vehicles
+interface Vehicles
 {
-    public void drive()
-    {
-
-    }
+    public void drive();
 }
 
-class Cars extends Vehicles
+class Cars implements Vehicles
 {
     public void drive()
     {
@@ -14,7 +11,7 @@ class Cars extends Vehicles
     }
 }
 
-class Bike extends Vehicles
+class Bike implements Vehicles
 {
     public void drive()
     {
