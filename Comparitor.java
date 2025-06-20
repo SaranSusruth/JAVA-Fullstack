@@ -54,8 +54,22 @@ public class Comparitor
             }
             
         };
-
-
+         Comparator<String> comII = new Comparator<String>() 
+        {
+            public int compare(String i,String j)
+            {
+                
+                if(i.length() > j.length())
+                {
+                    return 1;
+                }
+                else
+                {
+                    return -1;
+                }
+            }
+            
+        };
         name.add("Susruthz");
         name.add("Ananda");
         name.add("Nikhil");
@@ -70,8 +84,13 @@ public class Comparitor
         //ordered list
         System.out.println("ordered list:" + name);
 
-        //custom ordering
+        //custom ordering 1
         Collections.sort(name, comI);
-        System.out.println("custom ordered:" + name);
+        System.out.println("custom ordered 1:" + name);
+
+        //custom ordering 2
+        Collections.sort(name, comII);
+        System.out.println("custom ordered 2:" + name);
+
      }
 }
