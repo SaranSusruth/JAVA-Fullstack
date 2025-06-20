@@ -17,6 +17,7 @@ public class Mapeg
         //getting the all keys
         System.out.println(stud.keySet());
 
+        //getting the key and its value
         for (String key : stud.keySet())
         {
             System.out.println(key + ":" + stud.get(key));
